@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="output.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center ">
+    <div id="container"
+        class="h-[400px] w-[400px] bg-cyan-300 text-white border border-gray-300 shadow-2xl p-4 rounded flex flex-col gap-4">
+        <!-- HEADING -->
+        <div  class="flex justify-center">
+            <h1 class="text-3xl font-bold .text-shadow ">TODO LIST</h1>
+        </div>
+        <!-- INPUT BOX -->
+        <div id="input" class="flex justify-center gap-2.5">
+
+            <input type="text" id="name" name="name" placeholder=" Type here ..."
+                class="bg-white  rounded cursor-text w-64 h-8 text-black outline-none border-none p-2">
+            <button type="submit"
+                class="bg-violet-600 w-26 h-8 transition rounded  hover:bg-blue-700 active:scale-95" id="submit">ADD TASKS</button>
+        </div>
+
+        <!-- TODO-CONTAINER -->
+        <div id="lists">
+            <ul id="todo-container" class="p-2">
+                
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

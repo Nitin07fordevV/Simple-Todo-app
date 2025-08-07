@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* In your CSS file */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#todo-container {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: auto;
+}
+
+
+#todo-container li {
+    display: flex;
+    /* background: ; */
+    align-items: center;
+    gap: 10px;
+    height: 34px;
+    border-bottom: 1px solid white;
+    overflow-x: auto;
+}
+
+
+
+#todo-container li input {
+    height: 22px;
+    width: 22px;
+}
+
+#todo-container li button {
+    background: red;
+    padding: 1px 4px;
+    border-radius: 3px;
+    cursor: pointer;
+   margin-left: auto;
+}
+
+#todo-container li button:active {
+    transform: scale(0.90);
+}
